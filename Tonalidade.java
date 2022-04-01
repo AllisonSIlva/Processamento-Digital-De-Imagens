@@ -69,7 +69,8 @@ public class Aula {
 					int rgb = image.getRGB(coluna,linha);
 					Color c = new Color(rgb);
 					int red = c.getRed();
-					Color bandaunicaR = new Color(red,0,0);
+					int aumentoTon = tonalidade(aumento, red);
+					Color bandaunicaR = new Color(aumentoTon,0,0);
 					
 					saidaR.setRGB(coluna,linha,bandaunicaR.getRGB());
 					
